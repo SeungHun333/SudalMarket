@@ -1,11 +1,26 @@
-# Created by https://www.toptal.com/developers/gitignore/api/java,intellij+all,windows,macos,gradle
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,intellij+all,windows,macos,gradle
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,intellij+all,git,java,maven,gradle,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,intellij+all,git,java,maven,gradle,visualstudiocode
+
+.env
+/log
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-.idea/
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -150,6 +165,44 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -195,12 +248,14 @@ gradle-app.setting
 
 # Eclipse Gradle plugin generated files
 # Eclipse Core
-.project
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
 
 ### Gradle Patch ###
 # Java heap dump
 *.hprof
 
-# End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,windows,macos,gradle
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,intellij+all,git,java,maven,gradle,visualstudiocode
+/rento-api/src/main/resources/firebase/rento-f1d61-firebase-adminsdk-fbsvc-bd76cc388d.json
+/rento-pub/src/main/resources/firebase/rento-f1d61-firebase-adminsdk-fbsvc-bd76cc388d.json
+/rento-sub/src/main/resources/firebase/rento-f1d61-firebase-adminsdk-fbsvc-bd76cc388d.json
+/infra/src/main/resources/firebase/rento-f1d61-firebase-adminsdk-fbsvc-bd76cc388d.json
