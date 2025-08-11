@@ -20,4 +20,9 @@ public class UserService {
         userRepository.save(newUser);
         return "success";
     }
+
+    public boolean isAvailableEmail(String email) {
+
+        return !userRepository.existsByEmail(email);
+    }
 }
