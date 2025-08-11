@@ -11,11 +11,13 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-
     public String signUp(User newUser) {
 
-        userRepository.save(newUser);
+        if(userRepository.existsByEmail(newUser.getEmail())) {
+            throw new IllegalArgumentException("이미 사용 중이 이메일 입니다.");
+        }
 
+        userRepository.save(newUser);
         return "success";
     }
 }
