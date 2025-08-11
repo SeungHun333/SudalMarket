@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,intellij+all,git,java,maven,gradle,visualstudiocode
 
 .env
+.gradle/
 /log
 ### Git ###
 # Created by git for backups. To disable backups in Git:
