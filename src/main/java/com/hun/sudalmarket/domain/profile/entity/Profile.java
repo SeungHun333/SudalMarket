@@ -32,4 +32,16 @@ public class Profile extends BaseEntity {
         this.image = image;
         this.message = description;
     }
+
+    public void updateImage(String imageUrl) {
+        this.image = imageUrl;
+    }
+
+    public void updateMessage(String message) {
+        this.message = message;
+    }
+
+    public void updateName(String profileName) {
+        this.profileName = profileName;
+    }
 }
